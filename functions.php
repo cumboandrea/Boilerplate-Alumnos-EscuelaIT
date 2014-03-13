@@ -48,14 +48,19 @@ add_image_size( 'home-thumb', 380, 245, true );
 );
 	wp_nav_menu( $defaults );
 */
+
+
+
 //
+// MENU
+// 
 add_action( 'init', 'register_my_menus' );
  
 function register_my_menus() {
 	register_nav_menus(
 		array(
 			'main-nav-menu' => __( 'Menu Superior' ),
-            'footer' => __( 'Menu del footer' ),
+      'footer' => __( 'Menu del footer' ),
 			'mobile' => __( 'Menu Para Móviles (4 items solo)' )
 		)
 	);
